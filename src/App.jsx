@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText } from 'lucide-react'
+import CQCCompliance from './CQCCompliance'
 
 function App() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ function App() {
   
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null)
+  const [currentPage, setCurrentPage] = useState('home')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -54,23 +56,37 @@ function App() {
     })
   }
 
+  if (currentPage === 'cqc') {
+    return <CQCCompliance />
+  }
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Shield className="w-8 h-8" />
             <span className="text-2xl font-bold">EquipSafety</span>
           </div>
-          <a 
-            href="#contact" 
-            className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
-          >
-            Get Started
-          </a>
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => setCurrentPage('cqc')}
+              className="text-white hover:text-orange-500 font-semibold transition-colors"
+            >
+              CQC Compliance
+            </button>
+            <a 
+              href="#contact" 
+              className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
         </div>
       </header>
 
+      {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -111,6 +127,7 @@ function App() {
         </div>
       </section>
 
+      {/* Trust Badges */}
       <section className="py-8 px-6 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
@@ -134,6 +151,7 @@ function App() {
         </div>
       </section>
 
+      {/* Problem Section */}
       <section className="py-20 px-6 bg-red-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -166,6 +184,7 @@ function App() {
         </div>
       </section>
 
+      {/* Solution Section */}
       <section className="py-20 px-6 bg-white" id="how-it-works">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -286,6 +305,7 @@ function App() {
         </div>
       </section>
 
+      {/* Benefits Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -330,6 +350,7 @@ function App() {
         </div>
       </section>
 
+      {/* Social Proof Section */}
       <section className="py-20 px-6 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12">Trusted by Care Facilities Across the UK</h2>
@@ -350,6 +371,7 @@ function App() {
         </div>
       </section>
 
+      {/* Contact Form Section */}
       <section className="py-20 px-6 bg-white" id="contact">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -457,6 +479,7 @@ function App() {
         </div>
       </section>
 
+      {/* Zero-Risk Guarantee */}
       <section className="py-16 px-6 bg-green-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -498,6 +521,7 @@ function App() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -515,6 +539,7 @@ function App() {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
                 <li><a href="#contact" className="hover:text-white">Get Started</a></li>
+                <li><button onClick={() => setCurrentPage('cqc')} className="hover:text-white text-left">CQC Compliance</button></li>
               </ul>
             </div>
             <div>
@@ -535,3 +560,4 @@ function App() {
 }
 
 export default App
+
