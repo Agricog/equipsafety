@@ -1,63 +1,22 @@
 import { useState } from 'react'
 import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText } from 'lucide-react'
 import CQCCompliance from './CQCCompliance'
+import Privacy from './Privacy'
+import TermsOfService from './TermsOfService'
 
 function App() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    facilityName: '',
-    phone: ''
-  })
-  
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState(null)
   const [currentPage, setCurrentPage] = useState('home')
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus(null)
-    
-    try {
-      const response = await fetch('YOUR_SMARTSUITE_WEBHOOK_URL', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-          source: 'equipsafety_landing'
-        })
-      })
-      
-      if (!response.ok) throw new Error('Failed')
-      
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', facilityName: '', phone: '' })
-      
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'generate_lead', {
-          event_category: 'engagement',
-          event_label: 'safety_audit_request'
-        })
-      }
-    } catch (error) {
-      console.error('Submission error:', error)
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
 
   if (currentPage === 'cqc') {
     return <CQCCompliance />
+  }
+
+  if (currentPage === 'privacy') {
+    return <Privacy />
+  }
+
+  if (currentPage === 'terms') {
+    return <TermsOfService />
   }
 
   return (
@@ -119,7 +78,7 @@ function App() {
               <div className="bg-white rounded-xl p-8 text-center">
                 <QrCode className="w-32 h-32 mx-auto text-blue-900 mb-4" />
                 <p className="text-blue-900 font-semibold text-lg">
-                  Scan. Select Language. Complete Training. Instant Alert.
+                  Scan. Complete Training. Instant Proof.
                 </p>
               </div>
             </div>
@@ -192,7 +151,7 @@ function App() {
               One QR Code. Complete Training. Instant Verification.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, Multilingual chatbot support—and you get a complete digital audit trail for CQC compliance.
+              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, chatbot support—and you get a complete digital audit trail for CQC compliance.
             </p>
           </div>
 
@@ -203,25 +162,25 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">1. Scan QR</h3>
               <p className="text-gray-600">
-                Staff scans weatherproof QR code on equipment with any phone or device.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Globe className="w-10 h-10 text-blue-900" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">2. Select Language</h3>
-              <p className="text-gray-600">
-                Page loads with YouTube tutorial, written instructions, and training form.
+                Staff scans weatherproof QR code on equipment with their phone.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-10 h-10 text-blue-900" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">3. Complete Training</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">2. Access Training</h3>
               <p className="text-gray-600">
-                YouTube tutorial + Google Doc instructions + Chatbot support (available in multiple languages).
+                Page loads with YouTube tutorial, written instructions, and training form.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="w-10 h-10 text-blue-900" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">3. Use Multilingual Chatbot</h3>
+              <p className="text-gray-600">
+                Ask equipment questions in any language. Chatbot responds in their native language.
               </p>
             </div>
             <div className="text-center">
@@ -230,7 +189,7 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">4. Confirm & Alert</h3>
               <p className="text-gray-600">
-                Staff completes training form. If any issue → Manager emailed immediately.
+                Staff completes training form. If any issue → Manager emailed instantly. Compliance recorded.
               </p>
             </div>
           </div>
@@ -293,11 +252,11 @@ function App() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Chatbot Support (Multilingual Q&A)</span>
+                    <span>Chatbot (Multiple Languages Q&A)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Data Logging</span>
+                    <span>Digital Audit Trail</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
@@ -305,7 +264,7 @@ function App() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>CQC-Ready Audit Trail</span>
+                    <span>CQC-Ready Compliance Record</span>
                   </div>
                 </div>
               </div>
@@ -369,7 +328,7 @@ function App() {
               <p className="text-xl text-blue-200">Digital Training Records</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-orange-500 mb-2">90+</div>
+              <div className="text-5xl font-bold text-orange-500 mb-2">50+</div>
               <p className="text-xl text-blue-200">Languages. Zero Barriers.</p>
             </div>
             <div>
@@ -380,7 +339,7 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Contact Form Section with SmartSuite Iframe */}
       <section className="py-20 px-6 bg-white" id="contact">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -405,86 +364,20 @@ function App() {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-gray-50 p-8 rounded-2xl shadow-xl">
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">Your Name *</label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-900 focus:outline-none"
-                  placeholder="John Smith"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">Email Address *</label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-900 focus:outline-none"
-                  placeholder="john@carehome.co.uk"
-                />
-              </div>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">Facility Name *</label>
-                <input
-                  type="text"
-                  name="facilityName"
-                  required
-                  value={formData.facilityName}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-900 focus:outline-none"
-                  placeholder="Oakwood Care Home"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-semibold mb-2">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-900 focus:outline-none"
-                  placeholder="07123 456789"
-                />
-              </div>
-            </div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className={`w-full font-bold py-4 px-8 rounded-lg text-lg transition-colors ${
-                isSubmitting 
-                  ? 'bg-gray-400 cursor-not-allowed' 
-                  : 'bg-orange-500 hover:bg-orange-600'
-              } text-white`}
-            >
-              {isSubmitting ? 'Sending...' : 'Book My Free Safety Audit'}
-            </button>
-            
-            {submitStatus === 'success' && (
-              <p className="text-green-600 text-center mt-4 font-bold">
-                ✓ Thank you! We'll contact you within 24 hours.
-              </p>
-            )}
-            
-            {submitStatus === 'error' && (
-              <p className="text-red-600 text-center mt-4">
-                Error submitting. Please email hello@equipsafety.co.uk directly.
-              </p>
-            )}
-            
-            <p className="text-center text-gray-600 mt-4 text-sm">
-              We'll contact you within 24 hours to schedule your audit
-            </p>
-          </form>
+          {/* SmartSuite Form Iframe */}
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <iframe 
+              src="https://app.smartsuite.com/form/sba974gi/oRiNhRxfaT?header=false" 
+              width="100%" 
+              height="600px" 
+              frameBorder="0"
+              title="EquipSafety Safety Audit Request"
+            ></iframe>
+          </div>
+
+          <p className="text-center text-gray-600 mt-4 text-sm">
+            We'll contact you within 24 hours to schedule your audit
+          </p>
         </div>
       </section>
 
@@ -559,8 +452,13 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 EquipSafety. All rights reserved.</p>
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
+              <button onClick={() => setCurrentPage('privacy')} className="text-gray-400 hover:text-white">Privacy Policy</button>
+              <button onClick={() => setCurrentPage('terms')} className="text-gray-400 hover:text-white">Terms of Service</button>
+              <a href="/sitemap.xml" className="text-gray-400 hover:text-white">Sitemap</a>
+            </div>
+            <p className="text-center text-gray-400">&copy; 2025 EquipSafety. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -569,6 +467,7 @@ function App() {
 }
 
 export default App
+
 
 
 
