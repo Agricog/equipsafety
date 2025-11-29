@@ -172,7 +172,7 @@ export default function TermsOfService() {
               </p>
               <div className="mt-4 p-4 bg-blue-50 rounded-lg">
                 <p className="font-semibold">EquipSafety</p>
-                <p>Email: abi@equipsafety.co.uk</p>
+                <p>Email: support@equipsafety.co.uk</p>
                 <p>Website: equipsafety.co.uk</p>
               </div>
             </div>
