@@ -74,7 +74,7 @@
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+44-XXXX-XXXX",
+        "telephone": "+44-7772-080013",
         "contactType": "Customer Service",
         "email": "abi@equipsafety.co.uk"
       },
@@ -86,7 +86,7 @@
     }
     </script>
     
-    <!-- Structured Data - Service -->
+    <!-- Structured Data - Service with Pricing -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -103,11 +103,53 @@
       },
       "serviceType": "Safety Training",
       "availableLanguage": ["en", "pl", "ro", "pt", "es", "ur", "bn", "hi", "ar"],
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "GBP",
-        "price": "99.00",
-        "description": "Monthly subscription starting from £99"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "EquipSafety Pricing Plans",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Small Plan",
+            "description": "Up to 20 equipment",
+            "price": "149.00",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "GBP",
+              "price": "149.00",
+              "billingIncrement": "P1M"
+            },
+            "pricingNote": "Setup fee £395 required"
+          },
+          {
+            "@type": "Offer",
+            "name": "Medium Plan",
+            "description": "Up to 50 equipment",
+            "price": "199.00",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "GBP",
+              "price": "199.00",
+              "billingIncrement": "P1M"
+            },
+            "pricingNote": "Setup fee £595 required"
+          },
+          {
+            "@type": "Offer",
+            "name": "Large Plan",
+            "description": "51-100+ equipment",
+            "price": "349.00",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "GBP",
+              "price": "349.00",
+              "billingIncrement": "P1M"
+            },
+            "pricingNote": "Setup fee £995 required"
+          }
+        ]
       }
     }
     </script>
@@ -121,7 +163,7 @@
       "image": "https://equipsafety.co.uk/logo.png",
       "description": "Multilingual equipment safety training for UK care facilities",
       "url": "https://equipsafety.co.uk",
-      "telephone": "+44-XXXX-XXXX",
+      "telephone": "+44-7772-080013",
       "email": "abi@equipsafety.co.uk",
       "address": {
         "@type": "PostalAddress",
@@ -171,6 +213,14 @@
             "@type": "Answer",
             "text": "EquipSafety can be live in your facility within 48 hours of signing up."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of EquipSafety?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EquipSafety offers three pricing tiers: Small Plan (£395 setup + £149/month for up to 20 equipment), Medium Plan (£595 setup + £199/month for up to 50 equipment), and Large Plan (£995 setup + £349/month for 51-100+ equipment)."
+          }
         }
       ]
     }
@@ -188,8 +238,8 @@
       });
     </script>
     
-    <!-- Google Search Console Verification (add your verification code here) -->
-    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" /> -->
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="VERIFICATION_CODE_HERE" />
     
   </head>
   <body>
@@ -197,4 +247,5 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
 
