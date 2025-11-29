@@ -95,10 +95,10 @@ function App() {
                 Industry-Leading Safety Solution
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Stop Equipment Accidents Before They Happen—In Any Language
+                Protecting People from Equipment Accidents Before They Occur—Across All Languages
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Eliminate language barriers and reduce equipment incidents in your care facility with instant multi-language safety instructions via QR codes.
+                Multilingual safety instructions, training confirmations, and real-time manager alerts—all triggered by one QR code scan on your equipment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -119,7 +119,7 @@ function App() {
               <div className="bg-white rounded-xl p-8 text-center">
                 <QrCode className="w-32 h-32 mx-auto text-blue-900 mb-4" />
                 <p className="text-blue-900 font-semibold text-lg">
-                  Scan. Select Language. Stay Safe.
+                  Scan. Select Language. Complete Training. Instant Alert.
                 </p>
               </div>
             </div>
@@ -157,10 +157,10 @@ function App() {
           <div className="text-center mb-12">
             <AlertTriangle className="w-16 h-16 mx-auto text-red-600 mb-4" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              The Hidden Cost of Language Barriers
+              The Hidden Cost of Language Barriers in Care
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              In UK care facilities, staff speak dozens of languages. Equipment instructions are only in English. The result? Preventable accidents and compliance risks.
+              Care facilities employ multilingual staff. Equipment comes with English-only instructions. The result? Preventable accidents, training gaps, and CQC compliance risks.
             </p>
           </div>
 
@@ -168,17 +168,17 @@ function App() {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="text-red-600 font-bold text-4xl mb-2">£15,000+</div>
               <p className="text-gray-700 font-semibold mb-2">Average Cost Per Incident</p>
-              <p className="text-gray-600">Equipment misuse leads to staff injuries, downtime, and potential legal claims</p>
+              <p className="text-gray-600">Equipment misuse leads to staff injuries, resident incidents, downtime, and potential legal claims.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-red-600 font-bold text-4xl mb-2">40%</div>
-              <p className="text-gray-700 font-semibold mb-2">Of Care Staff Don't Have English as First Language</p>
-              <p className="text-gray-600">Yet all safety instructions and equipment manuals remain English-only</p>
+              <div className="text-red-600 font-bold text-4xl mb-2">40%+</div>
+              <p className="text-gray-700 font-semibold mb-2">Of Care Staff Speak English as Second Language</p>
+              <p className="text-gray-600">Yet all safety instructions, equipment manuals, and training remain English-only. No exceptions.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-red-600 font-bold text-4xl mb-2">CQC</div>
-              <p className="text-gray-700 font-semibold mb-2">Compliance Requirements</p>
-              <p className="text-gray-600">Demonstrable staff training and safety protocols are mandatory for all ratings</p>
+              <div className="text-red-600 font-bold text-4xl mb-2">No Paper Trail</div>
+              <p className="text-gray-700 font-semibold mb-2">CQC Demands Training Proof</p>
+              <p className="text-gray-600">Without documented evidence of staff training, your facility faces compliance violations during inspections.</p>
             </div>
           </div>
         </div>
@@ -189,39 +189,48 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              One QR Code. Every Language. Total Safety.
+              One QR Code. Complete Training. Instant Verification.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              EquipSafety provides instant access to equipment safety instructions in over 50 languages through a simple QR code system.
+              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, AI chatbot support—and you get proof in SmartSuite.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-blue-900">1</span>
+                <QrCode className="w-10 h-10 text-blue-900" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">We Install QR Codes</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">1. Scan QR</h3>
               <p className="text-gray-600">
-                Weatherproof QR code labels applied to every piece of equipment in your facility - hoists, wheelchairs, beds, bathlifts, you name it.
+                Staff scans weatherproof QR code on equipment with their phone.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-blue-900">2</span>
+                <Globe className="w-10 h-10 text-blue-900" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Staff Scan & Select</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">2. Select Language</h3>
               <p className="text-gray-600">
-                Any team member scans the code with their phone, selects their language, and instantly gets clear safety instructions.
+                Page loads with language selector. Staff chooses their native language instantly.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-blue-900">3</span>
+                <FileText className="w-10 h-10 text-blue-900" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Everyone Stays Safe</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">3. Complete Training</h3>
               <p className="text-gray-600">
-                No more guesswork. No more mistranslations. Just clear, certified safety guidance in their native language.
+                YouTube tutorial + Google Doc instructions + AI chatbot (all in their language).
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-10 h-10 text-blue-900" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">4. Confirm & Alert</h3>
+              <p className="text-gray-600">
+                Staff completes training form. If any issue → Manager emailed immediately via SmartSuite.
               </p>
             </div>
           </div>
@@ -230,7 +239,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <Globe className="w-16 h-16 mb-6" />
-                <h3 className="text-3xl font-bold mb-6">Languages Covered</h3>
+                <h3 className="text-3xl font-bold mb-6">50+ Languages Covered</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
@@ -268,35 +277,35 @@ function App() {
                 <p className="mt-6 text-blue-200">+ 42 more languages available</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-6">Equipment Types</h3>
+                <h3 className="text-3xl font-bold mb-6">What's Included Per QR Code</h3>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Patient Hoists & Lifts</span>
+                    <span>YouTube Tutorial (Equipment Demo)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Profiling Beds</span>
+                    <span>Google Doc (Written Instructions)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Wheelchairs & Transfer Chairs</span>
+                    <span>Training Confirmation Form</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Bathlifts & Shower Chairs</span>
+                    <span>AI Chatbot (Multilingual Q&A)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Standing Aids</span>
+                    <span>SmartSuite Data Logging</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Walking Frames & Aids</span>
+                    <span>Manager Email Alerts (Issues)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>Pressure Relief Equipment</span>
+                    <span>CQC-Ready Audit Trail</span>
                   </div>
                 </div>
               </div>
@@ -317,33 +326,33 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <Shield className="w-12 h-12 text-blue-900 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Reduce Incidents</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Reduce Equipment Incidents</h3>
               <p className="text-gray-600">
-                Clear instructions in native languages prevent equipment misuse and accidents before they happen.
+                Staff fully trained in their own language. No guesswork. No mistranslations. Complete safety.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <FileText className="w-12 h-12 text-blue-900 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">CQC Compliance</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Instant CQC Compliance</h3>
               <p className="text-gray-600">
-                Demonstrable commitment to inclusive training and staff safety protocols.
+                Digital proof of staff training, equipment checks, and incident handling. CQC inspectors see everything.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <Clock className="w-12 h-12 text-blue-900 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Save Training Time</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Real-Time Manager Alerts</h3>
               <p className="text-gray-600">
-                No more lengthy translation sessions. Staff get instant access to safety guidance.
+                Equipment fault reported? Manager emailed instantly. Prevent incidents before they happen.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <Users className="w-12 h-12 text-blue-900 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Staff Confidence</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Staff Confidence & Inclusion</h3>
               <p className="text-gray-600">
-                When team members understand equipment fully, they work with confidence and care.
+                Every team member understands equipment fully in their native language. Nobody left behind.
               </p>
             </div>
           </div>
@@ -353,19 +362,19 @@ function App() {
       {/* Social Proof Section */}
       <section className="py-20 px-6 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">Trusted by Care Facilities Across the UK</h2>
+          <h2 className="text-4xl font-bold mb-12">The EquipSafety Difference</h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div>
               <div className="text-5xl font-bold text-orange-500 mb-2">100%</div>
-              <p className="text-xl text-blue-200">Compliance Coverage</p>
+              <p className="text-xl text-blue-200">Digital Training Records</p>
             </div>
             <div>
               <div className="text-5xl font-bold text-orange-500 mb-2">50+</div>
-              <p className="text-xl text-blue-200">Languages Supported</p>
+              <p className="text-xl text-blue-200">Languages. Zero Barriers.</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-orange-500 mb-2">24/7</div>
-              <p className="text-xl text-blue-200">Instant Access</p>
+              <div className="text-5xl font-bold text-orange-500 mb-2">Instant</div>
+              <p className="text-xl text-blue-200">Manager Alerts. Zero Delays.</p>
             </div>
           </div>
         </div>
@@ -379,7 +388,7 @@ function App() {
               Get Your Free Safety Audit
             </h2>
             <p className="text-xl text-gray-600">
-              We'll assess your facility's equipment and provide a custom safety solution proposal at no cost.
+              We'll assess your facility's equipment, identify language barriers, and provide a custom safety solution proposal at no cost.
             </p>
           </div>
 
@@ -531,7 +540,7 @@ function App() {
                 <span className="text-2xl font-bold">EquipSafety</span>
               </div>
               <p className="text-gray-400">
-                Making care facilities safer through multilingual equipment safety instructions.
+                Protecting care facility staff through multilingual equipment safety training and real-time compliance verification.
               </p>
             </div>
             <div>
@@ -560,4 +569,7 @@ function App() {
 }
 
 export default App
+
+
+
 
