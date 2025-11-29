@@ -100,11 +100,11 @@ function App() {
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5 text-orange-600" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">Live in 48 Hours</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">Live within 7 Days</span>
             </div>
             <div className="flex items-center gap-2">
               <Globe className="w-5 h-5 text-purple-600" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">50+ Languages</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">90+ Languages</span>
             </div>
           </div>
         </div>
