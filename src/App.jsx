@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText } from 'lucide-react'
+import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText, Zap } from 'lucide-react'
 import CQCCompliance from './CQCCompliance'
 import Privacy from './Privacy'
 import TermsOfService from './TermsOfService'
@@ -318,6 +318,159 @@ function App() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Choose the plan that fits your facility. All plans include 50+ languages, real-time alerts, and CQC compliance records.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Small Plan */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Small</h3>
+              <p className="text-gray-600 mb-6">Perfect for smaller facilities</p>
+              
+              <div className="mb-6">
+                <div className="text-gray-700 mb-2">Setup Fee</div>
+                <div className="text-4xl font-bold text-blue-900 mb-4">£395</div>
+                <div className="text-gray-700 mb-2">Monthly (from)</div>
+                <div className="text-4xl font-bold text-orange-500 mb-4">£149</div>
+                <div className="text-gray-600 mb-6">Equipment Limit: Up to 20</div>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">YouTube tutorials</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Written instructions</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Training forms</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Multilingual chatbot</span>
+                </li>
+              </ul>
+
+              <a 
+                href="#contact" 
+                className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+              >
+                Get Started
+              </a>
+            </div>
+
+            {/* Medium Plan (Featured) */}
+            <div className="bg-blue-900 text-white p-8 rounded-xl shadow-2xl border-2 border-orange-500 transform md:scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold">⭐ Most Popular</span>
+              </div>
+
+              <h3 className="text-2xl font-bold mb-2">Medium</h3>
+              <p className="text-blue-100 mb-6">Recommended for most facilities</p>
+              
+              <div className="mb-6">
+                <div className="text-blue-200 mb-2">Setup Fee</div>
+                <div className="text-4xl font-bold mb-4">£595</div>
+                <div className="text-blue-200 mb-2">Monthly (from)</div>
+                <div className="text-4xl font-bold text-orange-400 mb-4">£199</div>
+                <div className="text-blue-200 mb-6">Equipment Limit: Up to 50</div>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <span>YouTube tutorials</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <span>Written instructions</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <span>Training forms</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <span>Multilingual chatbot</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <span>Priority support</span>
+                </li>
+              </ul>
+
+              <a 
+                href="#contact" 
+                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+              >
+                Get Started
+              </a>
+            </div>
+
+            {/* Large Plan */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Large</h3>
+              <p className="text-gray-600 mb-6">For large chains & enterprises</p>
+              
+              <div className="mb-6">
+                <div className="text-gray-700 mb-2">Setup Fee</div>
+                <div className="text-4xl font-bold text-blue-900 mb-4">£995</div>
+                <div className="text-gray-700 mb-2">Monthly (from)</div>
+                <div className="text-4xl font-bold text-orange-500 mb-4">£349</div>
+                <div className="text-gray-600 mb-6">Equipment Limit: 51-100+</div>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">All Medium features</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Dedicated account manager</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Custom training</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">API access</span>
+                </li>
+              </ul>
+
+              <a 
+                href="#contact" 
+                className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+              >
+                Contact Sales
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 p-8 rounded-xl text-center">
+            <p className="text-gray-700 mb-2">
+              <strong>Need custom pricing?</strong> For facilities with 100+ equipment or special requirements, we offer tailored solutions.
+            </p>
+            <a href="#contact" className="text-blue-900 font-bold hover:underline">
+              Contact our sales team →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof Section */}
       <section className="py-20 px-6 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
@@ -448,6 +601,7 @@ function App() {
               <h4 className="font-bold text-lg mb-4">Contact</h4>
               <p className="text-gray-400">
                 Email: abi@equipsafety.co.uk<br />
+                Phone: 07772 080013<br />
                 Available: Monday - Friday, 9am - 5pm
               </p>
             </div>
@@ -467,6 +621,7 @@ function App() {
 }
 
 export default App
+
 
 
 
