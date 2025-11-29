@@ -192,7 +192,7 @@ function App() {
               One QR Code. Complete Training. Instant Verification.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, AI chatbot support—and you get a complete digital audit trail for CQC compliance.
+              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, Multilingual chatbot support—and you get a complete digital audit trail for CQC compliance.
             </p>
           </div>
 
@@ -203,7 +203,7 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">1. Scan QR</h3>
               <p className="text-gray-600">
-                Staff scans weatherproof QR code on equipment with their phone.
+                Staff scans weatherproof QR code on equipment with any phone or device.
               </p>
             </div>
             <div className="text-center">
@@ -212,7 +212,7 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">2. Select Language</h3>
               <p className="text-gray-600">
-                Page loads with language selector. Staff chooses their native language instantly.
+                Page loads with YouTube tutorial, written instructions, and training form.
               </p>
             </div>
             <div className="text-center">
@@ -221,7 +221,7 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">3. Complete Training</h3>
               <p className="text-gray-600">
-                YouTube tutorial + Google Doc instructions + AI chatbot (all in their language).
+                YouTube tutorial + Google Doc instructions + Chatbot support (available in multiple languages).
               </p>
             </div>
             <div className="text-center">
@@ -230,7 +230,7 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">4. Confirm & Alert</h3>
               <p className="text-gray-600">
-                Staff completes training form. If any issue → Manager emailed immediately via SmartSuite.
+                Staff completes training form. If any issue → Manager emailed immediately.
               </p>
             </div>
           </div>
@@ -293,11 +293,11 @@ function App() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>AI Chatbot (Multilingual Q&A)</span>
+                    <span>Chatbot Support (Multilingual Q&A)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span>SmartSuite Data Logging</span>
+                    <span>Data Logging</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
@@ -369,7 +369,7 @@ function App() {
               <p className="text-xl text-blue-200">Digital Training Records</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-orange-500 mb-2">50+</div>
+              <div className="text-5xl font-bold text-orange-500 mb-2">90+</div>
               <p className="text-xl text-blue-200">Languages. Zero Barriers.</p>
             </div>
             <div>
