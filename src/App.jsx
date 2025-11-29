@@ -326,7 +326,7 @@ function App() {
               Simple, Transparent Pricing
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the plan that fits your facility. All plans include 50+ languages, real-time alerts, and CQC compliance records.
+              Choose the plan that fits your facility. All plans include 90+ languages, real-time alerts, and CQC compliance records.
             </p>
           </div>
 
@@ -447,7 +447,7 @@ function App() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="text-gray-700">API access</span>
+                  <span className="text-gray-700">Priority support</span>
                 </li>
               </ul>
 
@@ -481,7 +481,7 @@ function App() {
               <p className="text-xl text-blue-200">Digital Training Records</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-orange-500 mb-2">50+</div>
+              <div className="text-5xl font-bold text-orange-500 mb-2">90+</div>
               <p className="text-xl text-blue-200">Languages. Zero Barriers.</p>
             </div>
             <div>
