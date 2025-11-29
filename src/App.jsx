@@ -192,7 +192,7 @@ function App() {
               One QR Code. Complete Training. Instant Verification.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, AI chatbot support—and you get proof in SmartSuite.
+              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, AI chatbot support—and you get a complete digital audit trail for CQC compliance.
             </p>
           </div>
 
