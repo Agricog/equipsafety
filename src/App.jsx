@@ -545,7 +545,7 @@ function App() {
             <div>
               <h4 className="font-bold text-lg mb-4">Contact</h4>
               <p className="text-gray-400">
-                Email: hello@equipsafety.co.uk<br />
+                Email: abi@equipsafety.co.uk<br />
                 Available: Monday - Friday, 9am - 5pm
               </p>
             </div>
