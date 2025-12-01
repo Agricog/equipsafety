@@ -198,7 +198,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <Globe className="w-16 h-16 mb-6" />
-                <h3 className="text-3xl font-bold mb-6">50+ Languages Covered</h3>
+                <h3 className="text-3xl font-bold mb-6">90+ Languages Covered</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
