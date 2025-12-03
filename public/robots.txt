@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://equipsafety.co.uk/sitemap.xml
