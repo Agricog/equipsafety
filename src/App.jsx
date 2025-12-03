@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText, Zap } from 'lucide-react'
 import CQCCompliance from './CQCCompliance'
 import Privacy from './Privacy'
@@ -21,23 +22,144 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* SEO Helmet */}
+      <Helmet>
+        <html lang="en" />
+        <title>EquipSafety - Multilingual Equipment Safety Training for Care Homes | QR Codes</title>
+        <meta name="description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, CQC compliant, real-time manager alerts. Prevent accidents with instant staff training in their native language." />
+        <meta name="keywords" content="care home safety training, multilingual equipment safety, QR code training, CQC compliance, care staff training, equipment incident prevention, healthcare safety" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="language" content="English" />
+        <meta name="author" content="EquipSafety" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://equipsafety.co.uk" />
+        
+        {/* Open Graph (Social Sharing) */}
+        <meta property="og:title" content="EquipSafety - Multilingual Equipment Safety Training for Care Homes" />
+        <meta property="og:description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, CQC compliant, real-time manager alerts." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://equipsafety.co.uk" />
+        <meta property="og:site_name" content="EquipSafety" />
+        <meta property="og:image" content="https://equipsafety.co.uk/images/og-hero.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="EquipSafety - Multilingual Equipment Safety Training" />
+        <meta name="twitter:description" content="QR-powered multilingual safety training for care homes. 90+ languages, CQC compliant." />
+        <meta name="twitter:image" content="https://equipsafety.co.uk/images/twitter-card.jpg" />
+        
+        {/* Schema.org JSON-LD - Organization */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "EquipSafety",
+            "url": "https://equipsafety.co.uk",
+            "logo": "https://equipsafety.co.uk/images/logo.png",
+            "description": "Multilingual QR-powered safety training for care homes",
+            "email": "abi@equipsafety.co.uk",
+            "telephone": "+447772080013",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "GB"
+            }
+          })}
+        </script>
+
+        {/* Schema.org JSON-LD - SoftwareApplication */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "EquipSafety",
+            "description": "Multilingual QR-powered safety training for care homes and healthcare facilities",
+            "url": "https://equipsafety.co.uk",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Small Plan",
+                "price": "149",
+                "priceCurrency": "GBP",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "Medium Plan",
+                "price": "199",
+                "priceCurrency": "GBP",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "Large Plan",
+                "price": "349",
+                "priceCurrency": "GBP",
+                "priceValidUntil": "2026-12-31"
+              }
+            ]
+          })}
+        </script>
+
+        {/* Schema.org JSON-LD - FAQPage */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does EquipSafety work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Staff scans a QR code on equipment to access multilingual safety training, written instructions, a training confirmation form, and 24/7 chatbot support in 90+ languages."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is EquipSafety CQC compliant?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. EquipSafety provides digital proof of staff training, equipment checks, and incident handling—all required for CQC compliance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many languages does EquipSafety support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EquipSafety supports 90+ languages including Polish, Romanian, Portuguese, Spanish, Urdu, Bengali, Hindi, Arabic, and more."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Shield className="w-8 h-8" />
+            <Shield className="w-8 h-8" aria-hidden="true" />
             <span className="text-2xl font-bold">EquipSafety</span>
           </div>
           <div className="flex items-center gap-4">
             <button
               onClick={() => setCurrentPage('cqc')}
               className="text-white hover:text-orange-500 font-semibold transition-colors"
+              aria-label="Navigate to CQC Compliance page"
             >
               CQC Compliance
             </button>
             <a 
               href="#contact" 
               className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
+              aria-label="Get started with EquipSafety - open contact form"
             >
               Get Started
             </a>
@@ -63,12 +185,14 @@ function App() {
                 <a 
                   href="#contact" 
                   className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
+                  aria-label="Get your free safety audit worth £500"
                 >
                   Get Your Free Safety Audit (Worth £500)
                 </a>
                 <a 
                   href="#how-it-works" 
                   className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
+                  aria-label="View how EquipSafety works"
                 >
                   See How It Works
                 </a>
@@ -76,7 +200,7 @@ function App() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20">
               <div className="bg-white rounded-xl p-8 text-center">
-                <QrCode className="w-32 h-32 mx-auto text-blue-900 mb-4" />
+                <QrCode className="w-32 h-32 mx-auto text-blue-900 mb-4" aria-hidden="true" />
                 <p className="text-blue-900 font-semibold text-lg">
                   Scan. Complete Training. Instant Proof.
                 </p>
@@ -87,23 +211,23 @@ function App() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-8 px-6 bg-gray-50 border-y border-gray-200">
+      <section className="py-8 px-6 bg-gray-50 border-y border-gray-200" aria-label="Trust and reliability badges">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-600" />
+              <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
               <span className="text-sm md:text-base font-semibold text-gray-700">No Credit Card Required</span>
             </div>
             <div className="flex items-center gap-2">
-              <Shield className="w-5 h-5 text-blue-600" />
+              <Shield className="w-5 h-5 text-blue-600" aria-hidden="true" />
               <span className="text-sm md:text-base font-semibold text-gray-700">CQC Compliant</span>
             </div>
             <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-orange-600" />
+              <Clock className="w-5 h-5 text-orange-600" aria-hidden="true" />
               <span className="text-sm md:text-base font-semibold text-gray-700">Live within 7 Days</span>
             </div>
             <div className="flex items-center gap-2">
-              <Globe className="w-5 h-5 text-purple-600" />
+              <Globe className="w-5 h-5 text-purple-600" aria-hidden="true" />
               <span className="text-sm md:text-base font-semibold text-gray-700">90+ Languages</span>
             </div>
           </div>
@@ -114,7 +238,7 @@ function App() {
       <section className="py-20 px-6 bg-red-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <AlertTriangle className="w-16 h-16 mx-auto text-red-600 mb-4" />
+            <AlertTriangle className="w-16 h-16 mx-auto text-red-600 mb-4" aria-hidden="true" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               The Hidden Cost of Language Barriers in Care
             </h2>
@@ -158,7 +282,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <QrCode className="w-10 h-10 text-blue-900" />
+                <QrCode className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">1. Scan QR</h3>
               <p className="text-gray-600">
@@ -167,7 +291,7 @@ function App() {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FileText className="w-10 h-10 text-blue-900" />
+                <FileText className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">2. Access Training</h3>
               <p className="text-gray-600">
@@ -176,7 +300,7 @@ function App() {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Globe className="w-10 h-10 text-blue-900" />
+                <Globe className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">3. Use Multilingual Chatbot</h3>
               <p className="text-gray-600">
@@ -185,7 +309,7 @@ function App() {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-10 h-10 text-blue-900" />
+                <CheckCircle className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">4. Confirm & Alert</h3>
               <p className="text-gray-600">
@@ -197,39 +321,39 @@ function App() {
           <div className="bg-gradient-to-br from-blue-900 to-blue-800 text-white rounded-2xl p-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Globe className="w-16 h-16 mb-6" />
+                <Globe className="w-16 h-16 mb-6" aria-hidden="true" />
                 <h3 className="text-3xl font-bold mb-6">90+ Languages Covered</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Polish</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Romanian</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Portuguese</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Spanish</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Urdu</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Bengali</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Hindi</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Arabic</span>
                   </div>
                 </div>
@@ -239,31 +363,31 @@ function App() {
                 <h3 className="text-3xl font-bold mb-6">What's Included Per QR Code</h3>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>YouTube Tutorial (Equipment Demo)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Google Doc (Written Instructions)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Training Confirmation Form</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Chatbot (Multiple Languages Q&A)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Digital Audit Trail</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>Manager Email Alerts (Issues)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                     <span>CQC-Ready Compliance Record</span>
                   </div>
                 </div>
@@ -284,7 +408,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Shield className="w-12 h-12 text-blue-900 mb-4" />
+              <Shield className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Reduce Equipment Incidents</h3>
               <p className="text-gray-600">
                 Staff fully trained in their own language. No guesswork. No mistranslations. Complete safety.
@@ -292,7 +416,7 @@ function App() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <FileText className="w-12 h-12 text-blue-900 mb-4" />
+              <FileText className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Instant CQC Compliance</h3>
               <p className="text-gray-600">
                 Digital proof of staff training, equipment checks, and incident handling. CQC inspectors see everything.
@@ -300,7 +424,7 @@ function App() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Clock className="w-12 h-12 text-blue-900 mb-4" />
+              <Clock className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Real-Time Manager Alerts</h3>
               <p className="text-gray-600">
                 Equipment fault reported? Manager emailed instantly. Prevent incidents before they happen.
@@ -308,7 +432,7 @@ function App() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Users className="w-12 h-12 text-blue-900 mb-4" />
+              <Users className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Staff Confidence & Inclusion</h3>
               <p className="text-gray-600">
                 Every team member understands equipment fully in their native language. Nobody left behind.
@@ -346,19 +470,19 @@ function App() {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">YouTube tutorials</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">Written instructions</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">Training forms</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">Multilingual chatbot</span>
                 </li>
               </ul>
@@ -366,6 +490,7 @@ function App() {
               <a 
                 href="#contact" 
                 className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                aria-label="Get started with EquipSafety Small plan"
               >
                 Get Started
               </a>
@@ -390,23 +515,23 @@ function App() {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
                   <span>YouTube tutorials</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
                   <span>Written instructions</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
                   <span>Training forms</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
                   <span>Multilingual chatbot</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
                   <span>Priority support</span>
                 </li>
               </ul>
@@ -414,6 +539,7 @@ function App() {
               <a 
                 href="#contact" 
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                aria-label="Get started with EquipSafety Medium plan - most popular option"
               >
                 Get Started
               </a>
@@ -434,19 +560,19 @@ function App() {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">All Medium features</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">Dedicated account manager</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">Custom training</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
                   <span className="text-gray-700">Priority support</span>
                 </li>
               </ul>
@@ -454,6 +580,7 @@ function App() {
               <a 
                 href="#contact" 
                 className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                aria-label="Contact sales for EquipSafety Large plan"
               >
                 Contact Sales
               </a>
@@ -507,7 +634,7 @@ function App() {
           <div className="mb-8">
             <div className="bg-orange-50 border-2 border-orange-300 rounded-xl p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <AlertTriangle className="w-6 h-6 text-orange-600" />
+                <AlertTriangle className="w-6 h-6 text-orange-600" aria-hidden="true" />
                 <span className="font-bold text-lg text-gray-900">Limited Availability</span>
               </div>
               <p className="text-gray-700">
@@ -524,7 +651,7 @@ function App() {
               width="100%" 
               height="600px" 
               frameBorder="0"
-              title="EquipSafety Safety Audit Request"
+              title="EquipSafety Safety Audit Request Form"
             ></iframe>
           </div>
 
@@ -538,34 +665,34 @@ function App() {
       <section className="py-16 px-6 bg-green-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <Shield className="w-16 h-16 mx-auto text-green-600 mb-4" />
+            <Shield className="w-16 h-16 mx-auto text-green-600 mb-4" aria-hidden="true" />
             <h3 className="text-3xl font-bold text-gray-900">Our Zero-Risk Promise</h3>
           </div>
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" aria-hidden="true" />
                 <div>
                   <p className="font-bold text-gray-900 mb-1">No Obligation Audit</p>
                   <p className="text-gray-600 text-sm">Free assessment with zero pressure to proceed</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" aria-hidden="true" />
                 <div>
                   <p className="font-bold text-gray-900 mb-1">24-Hour Response</p>
                   <p className="text-gray-600 text-sm">We contact you within 1 business day guaranteed</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" aria-hidden="true" />
                 <div>
                   <p className="font-bold text-gray-900 mb-1">Custom Pricing</p>
                   <p className="text-gray-600 text-sm">Pay only for equipment you need covered</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" aria-hidden="true" />
                 <div>
                   <p className="font-bold text-gray-900 mb-1">30-Day Trial</p>
                   <p className="text-gray-600 text-sm">Test the system risk-free in your facility</p>
@@ -582,7 +709,7 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Shield className="w-8 h-8" />
+                <Shield className="w-8 h-8" aria-hidden="true" />
                 <span className="text-2xl font-bold">EquipSafety</span>
               </div>
               <p className="text-gray-400">
@@ -621,6 +748,7 @@ function App() {
 }
 
 export default App
+
 
 
 
