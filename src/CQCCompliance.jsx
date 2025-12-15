@@ -556,9 +556,9 @@ export default function CQCCompliance() {
           <a 
             href="/#contact" 
             className="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-bold text-lg transition-colors"
-            aria-label="Book your free CQC compliance audit"
+            aria-label="Book your free compliance audit"
           >
-            Book Your Free CQC Compliance Audit
+            Book Your Free Compliance Audit
           </a>
         </div>
       </section>
