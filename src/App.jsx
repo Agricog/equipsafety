@@ -26,8 +26,8 @@ function App() {
       <Helmet>
         <html lang="en" />
         <title>EquipSafety - Multilingual Equipment Safety Training for Care Homes | QR Codes</title>
-        <meta name="description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, CQC compliant, real-time manager alerts. Prevent accidents with instant staff training in their native language." />
-        <meta name="keywords" content="care home safety training, multilingual equipment safety, QR code training, CQC compliance, care staff training, equipment incident prevention, healthcare safety" />
+        <meta name="description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, digital training records for CQC inspections, real-time manager alerts. Prevent accidents with instant staff training in their native language." />
+        <meta name="keywords" content="care home safety training, multilingual equipment safety, QR code training, CQC digital records, care staff training, equipment incident prevention, healthcare safety" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="language" content="English" />
         <meta name="author" content="EquipSafety" />
@@ -38,7 +38,7 @@ function App() {
         
         {/* Open Graph (Social Sharing) */}
         <meta property="og:title" content="EquipSafety - Multilingual Equipment Safety Training for Care Homes" />
-        <meta property="og:description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, CQC compliant, real-time manager alerts." />
+        <meta property="og:description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, digital training records, real-time manager alerts." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://equipsafety.co.uk" />
         <meta property="og:site_name" content="EquipSafety" />
@@ -49,7 +49,7 @@ function App() {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="EquipSafety - Multilingual Equipment Safety Training" />
-        <meta name="twitter:description" content="QR-powered multilingual safety training for care homes. 90+ languages, CQC compliant." />
+        <meta name="twitter:description" content="QR-powered multilingual safety training for care homes. 90+ languages, digital records for CQC." />
         <meta name="twitter:image" content="https://equipsafety.co.uk/images/twitter-card.jpg" />
         
         {/* Schema.org JSON-LD - Organization */}
@@ -122,10 +122,10 @@ function App() {
               },
               {
                 "@type": "Question",
-                "name": "Is EquipSafety CQC compliant?",
+                "name": "Does EquipSafety help with CQC requirements?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. EquipSafety provides digital proof of staff training, equipment checks, and incident handling—all required for CQC compliance."
+                  "text": "Yes. EquipSafety provides digital records of staff training and equipment checks, helping you meet CQC's 2027 digital records requirement. All training confirmations are timestamped and stored for inspection readiness."
                 }
               },
               {
@@ -152,9 +152,9 @@ function App() {
             <button
               onClick={() => setCurrentPage('cqc')}
               className="text-white hover:text-orange-500 font-semibold transition-colors"
-              aria-label="Navigate to CQC Compliance page"
+              aria-label="Navigate to CQC Requirements page"
             >
-              CQC Compliance
+              CQC Requirements
             </button>
             <a 
               href="#contact" 
@@ -220,7 +220,7 @@ function App() {
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-blue-600" aria-hidden="true" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">CQC Compliant</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">Digital Records for CQC</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5 text-orange-600" aria-hidden="true" />
@@ -243,7 +243,7 @@ function App() {
               The Hidden Cost of Language Barriers in Care
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Care facilities employ multilingual staff. Equipment comes with English-only instructions. The result? Preventable accidents, training gaps, and CQC compliance risks.
+              Care facilities employ multilingual staff. Equipment comes with English-only instructions. The result? Preventable accidents, training gaps, and missing documentation when inspectors ask for proof.
             </p>
           </div>
 
@@ -260,8 +260,8 @@ function App() {
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="text-red-600 font-bold text-4xl mb-2">No Paper Trail</div>
-              <p className="text-gray-700 font-semibold mb-2">CQC Demands Training Proof</p>
-              <p className="text-gray-600">Without documented evidence of staff training, your facility faces compliance violations during inspections.</p>
+              <p className="text-gray-700 font-semibold mb-2">CQC Requires Digital Records by 2027</p>
+              <p className="text-gray-600">Without documented evidence of staff training, your facility risks being unprepared when inspectors ask for proof.</p>
             </div>
           </div>
         </div>
@@ -275,7 +275,7 @@ function App() {
               One QR Code. Complete Training. Instant Verification.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, chatbot support—and you get a complete digital audit trail for CQC compliance.
+              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, chatbot support—and you get a complete digital audit trail ready for any inspection.
             </p>
           </div>
 
@@ -313,7 +313,7 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">4. Confirm & Alert</h3>
               <p className="text-gray-600">
-                Staff completes training form. If any issue → Manager emailed instantly. Compliance recorded.
+                Staff completes training form. If any issue → Manager emailed instantly. Training recorded digitally.
               </p>
             </div>
           </div>
@@ -388,7 +388,7 @@ function App() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>CQC-Ready Compliance Record</span>
+                    <span>Timestamped Training Records</span>
                   </div>
                 </div>
               </div>
@@ -417,9 +417,9 @@ function App() {
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <FileText className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Instant CQC Compliance</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Ready for CQC 2027</h3>
               <p className="text-gray-600">
-                Digital proof of staff training, equipment checks, and incident handling. CQC inspectors see everything.
+                Digital proof of staff training and equipment checks. Be prepared when inspectors ask for records.
               </p>
             </div>
 
@@ -450,7 +450,7 @@ function App() {
               Simple, Transparent Pricing
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the plan that fits your facility. All plans include 90+ languages, real-time alerts, and CQC compliance records.
+              Choose the plan that fits your facility. All plans include 90+ languages, real-time alerts, and digital training records.
             </p>
           </div>
 
@@ -713,7 +713,7 @@ function App() {
                 <span className="text-2xl font-bold">EquipSafety</span>
               </div>
               <p className="text-gray-400">
-                Protecting care facility staff through multilingual equipment safety training and real-time compliance verification.
+                Protecting care facility staff through multilingual equipment safety training and digital record-keeping.
               </p>
             </div>
             <div>
@@ -721,7 +721,7 @@ function App() {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
                 <li><a href="#contact" className="hover:text-white">Get Started</a></li>
-                <li><button onClick={() => setCurrentPage('cqc')} className="hover:text-white text-left">CQC Compliance</button></li>
+                <li><button onClick={() => setCurrentPage('cqc')} className="hover:text-white text-left">CQC Requirements</button></li>
               </ul>
             </div>
             <div>
