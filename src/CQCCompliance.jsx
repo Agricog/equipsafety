@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import { Shield, TrendingUp, Clock, CheckCircle, AlertTriangle, Target, BookOpen, Zap, FileText, Scale } from 'lucide-react'
 
@@ -102,17 +103,17 @@ export default function CQCCompliance() {
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Shield className="w-8 h-8" aria-hidden="true" />
             <span className="text-2xl font-bold">EquipSafety</span>
-          </div>
-          <a 
-            href="/" 
+          </Link>
+          <Link 
+            to="/" 
             className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
             aria-label="Return to EquipSafety homepage"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -628,13 +629,13 @@ export default function CQCCompliance() {
           <p className="text-xl text-blue-100 mb-8">
             We'll assess your current exposure: equipment without documented training records, language gaps, missing audit trails. Then show you exactly how to close those gaps.
           </p>
-          <a 
-            href="/#contact" 
+          <Link 
+            to="/#contact" 
             className="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-bold text-lg transition-colors"
             aria-label="Get your free liability audit"
           >
             Get Your Free Liability Audit
-          </a>
+          </Link>
           <p className="text-blue-200 mt-4 text-sm">
             Live in your facility within 7 days. Protected before CQC arrives.
           </p>
@@ -646,10 +647,10 @@ export default function CQCCompliance() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
+              <Link to="/" className="flex items-center gap-2 mb-4">
                 <Shield className="w-8 h-8" aria-hidden="true" />
                 <span className="text-2xl font-bold">EquipSafety</span>
-              </div>
+              </Link>
               <p className="text-gray-400">
                 Inspector-proof training records for care home managers who can't afford to be exposed.
               </p>
@@ -657,9 +658,9 @@ export default function CQCCompliance() {
             <div>
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="/" className="hover:text-white">Home</a></li>
-                <li><a href="/#demo" className="hover:text-white">See Demo</a></li>
-                <li><a href="/#contact" className="hover:text-white">Get Protected</a></li>
+                <li><Link to="/" className="hover:text-white">Home</Link></li>
+                <li><Link to="/#demo" className="hover:text-white">See Demo</Link></li>
+                <li><Link to="/#contact" className="hover:text-white">Get Protected</Link></li>
               </ul>
             </div>
             <div>
