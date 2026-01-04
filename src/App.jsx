@@ -790,7 +790,7 @@ function HomePage() {
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
                 <li><a href="https://app.equipsafety.co.uk/demo" className="hover:text-white">See Demo</a></li>
                 <li><a href="#contact" className="hover:text-white">Get Protected</a></li>
-                <li><Link to="/cqc-compliance" className="hover:text-white">CQC Requirements</Link></li>
+                <li><Link to="/cqc-compliance" onClick={() => window.scrollTo(0, 0)} className="hover:text-white">CQC Requirements</Link></li>
               </ul>
             </div>
             <div>
