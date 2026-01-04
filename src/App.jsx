@@ -25,9 +25,9 @@ function App() {
       {/* SEO Helmet */}
       <Helmet>
         <html lang="en" />
-        <title>EquipSafety - Multilingual Equipment Safety Training for Care Homes | QR Codes</title>
-        <meta name="description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, digital training records for CQC inspections, real-time manager alerts. Prevent accidents with instant staff training in their native language." />
-        <meta name="keywords" content="care home safety training, multilingual equipment safety, QR code training, CQC digital records, care staff training, equipment incident prevention, healthcare safety" />
+        <title>EquipSafety - Inspector-Proof Training Records for Care Homes | Never Be Exposed Again</title>
+        <meta name="description" content="Create timestamped, inspector-proof audit trails so managers are never personally exposed when something goes wrong. Digital proof of competency in 90+ languages." />
+        <meta name="keywords" content="CQC compliance records, care home audit trail, equipment training proof, inspector ready care home, manager liability protection, care home digital records" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="language" content="English" />
         <meta name="author" content="EquipSafety" />
@@ -37,8 +37,8 @@ function App() {
         <link rel="canonical" href="https://equipsafety.co.uk" />
         
         {/* Open Graph (Social Sharing) */}
-        <meta property="og:title" content="EquipSafety - Multilingual Equipment Safety Training for Care Homes" />
-        <meta property="og:description" content="QR-powered multilingual safety training for care home equipment. 90+ languages, digital training records, real-time manager alerts." />
+        <meta property="og:title" content="EquipSafety - Never Be Personally Exposed When Something Goes Wrong" />
+        <meta property="og:description" content="Inspector-proof audit trails for care homes. Timestamped training records. Digital proof of competency. 90+ languages." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://equipsafety.co.uk" />
         <meta property="og:site_name" content="EquipSafety" />
@@ -48,8 +48,8 @@ function App() {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="EquipSafety - Multilingual Equipment Safety Training" />
-        <meta name="twitter:description" content="QR-powered multilingual safety training for care homes. 90+ languages, digital records for CQC." />
+        <meta name="twitter:title" content="EquipSafety - Inspector-Proof Training Records" />
+        <meta name="twitter:description" content="Timestamped audit trails so managers are never personally exposed. Digital proof for CQC." />
         <meta name="twitter:image" content="https://equipsafety.co.uk/images/twitter-card.jpg" />
         
         {/* Schema.org JSON-LD - Organization */}
@@ -60,7 +60,7 @@ function App() {
             "name": "EquipSafety",
             "url": "https://equipsafety.co.uk",
             "logo": "https://equipsafety.co.uk/images/logo.png",
-            "description": "Multilingual QR-powered safety training for care homes",
+            "description": "Inspector-proof training records and audit trails for care homes",
             "email": "abi@equipsafety.co.uk",
             "telephone": "+447772080013",
             "address": {
@@ -76,7 +76,7 @@ function App() {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "EquipSafety",
-            "description": "Multilingual QR-powered safety training for care homes and healthcare facilities",
+            "description": "Inspector-proof training records and digital audit trails for care homes",
             "url": "https://equipsafety.co.uk",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
@@ -114,26 +114,26 @@ function App() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "How does EquipSafety work?",
+                "name": "How does EquipSafety protect managers from liability?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Staff scans a QR code on equipment to access multilingual safety training, written instructions, a training confirmation form, and 24/7 chatbot support in 90+ languages."
+                  "text": "EquipSafety creates timestamped, inspector-proof records every time staff access equipment training. When something goes wrong, you have documented proof of competency training—removing personal exposure from managers."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Does EquipSafety help with CQC requirements?",
+                "name": "What happens when CQC asks for training records?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. EquipSafety provides digital records of staff training and equipment checks, helping you meet CQC's 2027 digital records requirement. All training confirmations are timestamped and stored for inspection readiness."
+                  "text": "You show them your digital audit trail: timestamped training confirmations, fault reports with manager notifications, and proof that staff understood equipment in their native language. All stored and ready for inspection."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How many languages does EquipSafety support?",
+                "name": "How does the multilingual feature reduce liability?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "EquipSafety supports 90+ languages including Polish, Romanian, Portuguese, Spanish, Urdu, Bengali, Hindi, Arabic, and more."
+                  "text": "Staff can't claim they didn't understand equipment instructions. The chatbot responds in 90+ languages, creating documented proof that language was never a barrier to safe operation."
                 }
               }
             ]
@@ -161,38 +161,38 @@ function App() {
               className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
               aria-label="Get started with EquipSafety - open contact form"
             >
-              Get Started
+              Get Protected
             </a>
           </div>
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section - REFRAMED */}
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                Industry-Leading Safety Solution
+                For Care Home Managers Who Can't Afford to Be Exposed
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Protecting People from Equipment Accidents Before They Occur—Across All Languages
+                When Something Goes Wrong, You'll Have the Proof That Protects You
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Multilingual safety instructions, training confirmations, and real-time manager alerts—all triggered by one QR code scan on your equipment.
+                Timestamped, inspector-proof audit trails. Staff can't claim they didn't understand. Faults are logged the second they're reported. You're covered.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="#contact" 
                   className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
-                  aria-label="Get your free safety audit worth £500"
+                  aria-label="Get your free liability audit"
                 >
-                  Get Your Free Safety Audit (Worth £500)
+                  Get Your Free Liability Audit
                 </a>
                 <a 
                   href="#how-it-works" 
                   className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
-                  aria-label="View how EquipSafety works"
+                  aria-label="See how protection works"
                 >
                   See How It Works
                 </a>
@@ -202,7 +202,10 @@ function App() {
               <div className="bg-white rounded-xl p-8 text-center">
                 <QrCode className="w-32 h-32 mx-auto text-blue-900 mb-4" aria-hidden="true" />
                 <p className="text-blue-900 font-semibold text-lg">
-                  Scan. Complete Training. Instant Proof.
+                  Scan → Train → Proof Created
+                </p>
+                <p className="text-gray-600 text-sm mt-2">
+                  Every interaction timestamped. Every record stored.
                 </p>
               </div>
             </div>
@@ -210,72 +213,72 @@ function App() {
         </div>
       </section>
 
-      {/* Trust Badges */}
+      {/* Trust Badges - REFRAMED */}
       <section className="py-8 px-6 bg-gray-50 border-y border-gray-200" aria-label="Trust and reliability badges">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">No Credit Card Required</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">Inspector-Proof Records</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-blue-600" aria-hidden="true" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">Digital Records for CQC</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">Timestamped Proof</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5 text-orange-600" aria-hidden="true" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">Live within 7 Days</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">Live in 7 Days</span>
             </div>
             <div className="flex items-center gap-2">
               <Globe className="w-5 h-5 text-purple-600" aria-hidden="true" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">90+ Languages</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">No Language Excuses</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Problem Section - REFRAMED AROUND LIABILITY */}
       <section className="py-20 px-6 bg-red-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <AlertTriangle className="w-16 h-16 mx-auto text-red-600 mb-4" aria-hidden="true" />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              The Hidden Cost of Language Barriers in Care
+              If CQC Walks In Today, Are You Exposed?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Care facilities employ multilingual staff. Equipment comes with English-only instructions. The result? Preventable accidents, training gaps, and missing documentation when inspectors ask for proof.
+              Care homes don't wake up wanting a QR tool. They wake up with inspection pressure, audit anxiety, agency staff rotating, missing documents—and a manager thinking: "Can I prove my staff were properly trained?"
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-red-600 font-bold text-4xl mb-2">£15,000+</div>
-              <p className="text-gray-700 font-semibold mb-2">Average Cost Per Incident</p>
-              <p className="text-gray-600">Equipment misuse leads to staff injuries, resident incidents, downtime, and potential legal claims.</p>
+              <div className="text-red-600 font-bold text-4xl mb-2">No Proof</div>
+              <p className="text-gray-700 font-semibold mb-2">Staff Claims They Weren't Trained</p>
+              <p className="text-gray-600">Without documented evidence, it's your word against theirs. When incidents happen, managers take the blame.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-red-600 font-bold text-4xl mb-2">40%+</div>
-              <p className="text-gray-700 font-semibold mb-2">Of Care Staff Speak English as Second Language</p>
-              <p className="text-gray-600">Yet all safety instructions, equipment manuals, and training remain English-only. No exceptions.</p>
+              <div className="text-red-600 font-bold text-4xl mb-2">"I Didn't Understand"</div>
+              <p className="text-gray-700 font-semibold mb-2">Language Becomes Your Liability</p>
+              <p className="text-gray-600">40%+ of care staff speak English as a second language. English-only instructions are a documented risk you're carrying.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="text-red-600 font-bold text-4xl mb-2">No Paper Trail</div>
-              <p className="text-gray-700 font-semibold mb-2">CQC Requires Digital Records by 2027</p>
-              <p className="text-gray-600">Without documented evidence of staff training, your facility risks being unprepared when inspectors ask for proof.</p>
+              <div className="text-red-600 font-bold text-4xl mb-2">"We Weren't Told"</div>
+              <p className="text-gray-700 font-semibold mb-2">Fault Reports With No Paper Trail</p>
+              <p className="text-gray-600">Equipment problems get mentioned verbally. When something fails, there's no timestamped proof you were notified.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Solution Section - REFRAMED AS LIABILITY SHIELD */}
       <section className="py-20 px-6 bg-white" id="how-it-works">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              One QR Code. Complete Training. Instant Verification.
+              Your Timestamped, Inspector-Proof Audit Trail
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              When staff scan a QR code on equipment, they get everything they need: video tutorial, written instructions, training confirmation form, chatbot support—and you get a complete digital audit trail ready for any inspection.
+              Every scan creates documented proof. Every training confirmation is timestamped. Every fault report notifies you instantly with a permanent record. When inspectors ask for evidence—you have it.
             </p>
           </div>
 
@@ -284,36 +287,36 @@ function App() {
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <QrCode className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">1. Scan QR</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">1. Staff Scans QR</h3>
               <p className="text-gray-600">
-                Staff scans weatherproof QR code on equipment with their phone.
+                Timestamp created. Record of who accessed training and when.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">2. Access Training</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">2. Completes Training</h3>
               <p className="text-gray-600">
-                Page loads with YouTube tutorial, written instructions, and training form.
+                Video + instructions + confirmation form. Proof of competency, not trust.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Globe className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">3. Use Multilingual Chatbot</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">3. No Language Excuse</h3>
               <p className="text-gray-600">
-                Ask equipment questions in any language. Chatbot responds in their native language.
+                Chatbot answers questions in 90+ languages. Staff can't claim they didn't understand.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">4. Confirm & Alert</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">4. You're Protected</h3>
               <p className="text-gray-600">
-                Staff completes training form. If any issue → Manager emailed instantly. Training recorded digitally.
+                Fault? You're emailed instantly with timestamp. Training gap? You have the records.
               </p>
             </div>
           </div>
@@ -321,74 +324,62 @@ function App() {
           <div className="bg-gradient-to-br from-blue-900 to-blue-800 text-white rounded-2xl p-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Globe className="w-16 h-16 mb-6" aria-hidden="true" />
-                <h3 className="text-3xl font-bold mb-6">90+ Languages Covered</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Polish</span>
+                <Shield className="w-16 h-16 mb-6" aria-hidden="true" />
+                <h3 className="text-3xl font-bold mb-6">Your Liability Shield</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
+                    <div>
+                      <span className="font-bold">Multilingual Chatbot</span>
+                      <p className="text-blue-200 text-sm">Language is no longer a liability during audits or incidents</p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Romanian</span>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
+                    <div>
+                      <span className="font-bold">Training Confirmations</span>
+                      <p className="text-blue-200 text-sm">Proof of competency, not trust—timestamped and stored</p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Portuguese</span>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
+                    <div>
+                      <span className="font-bold">Instant Fault Alerts</span>
+                      <p className="text-blue-200 text-sm">You're covered the second something is reported</p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Spanish</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Urdu</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Bengali</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Hindi</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Arabic</span>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
+                    <div>
+                      <span className="font-bold">Digital Audit Trail</span>
+                      <p className="text-blue-200 text-sm">Inspector-ready records for CQC 2027 requirements</p>
+                    </div>
                   </div>
                 </div>
-                <p className="mt-6 text-blue-200">+ 42 more languages available</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-6">What's Included Per QR Code</h3>
+                <h3 className="text-3xl font-bold mb-6">When To Deploy EquipSafety</h3>
+                <p className="text-blue-200 mb-6">Facilities typically implement at moments of highest risk:</p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>YouTube Tutorial (Equipment Demo)</span>
+                    <AlertTriangle className="w-5 h-5 text-orange-400" aria-hidden="true" />
+                    <span>After an incident (close the gap immediately)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Google Doc (Written Instructions)</span>
+                    <AlertTriangle className="w-5 h-5 text-orange-400" aria-hidden="true" />
+                    <span>Before an inspection (get protected fast)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Training Confirmation Form</span>
+                    <AlertTriangle className="w-5 h-5 text-orange-400" aria-hidden="true" />
+                    <span>New equipment installation</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Chatbot (Multiple Languages Q&A)</span>
+                    <AlertTriangle className="w-5 h-5 text-orange-400" aria-hidden="true" />
+                    <span>Ownership or management changes</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Digital Audit Trail</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Manager Email Alerts (Issues)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
-                    <span>Timestamped Training Records</span>
+                    <AlertTriangle className="w-5 h-5 text-orange-400" aria-hidden="true" />
+                    <span>Group-wide compliance rollouts</span>
                   </div>
                 </div>
               </div>
@@ -397,45 +388,46 @@ function App() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Benefits Section - REFRAMED */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Care Homes Choose EquipSafety
+              Why Managers Choose EquipSafety
             </h2>
+            <p className="text-xl text-gray-600">Protection from risk, blame, and regulatory exposure</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <Shield className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Reduce Equipment Incidents</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Personal Protection</h3>
               <p className="text-gray-600">
-                Staff fully trained in their own language. No guesswork. No mistranslations. Complete safety.
+                When something goes wrong, the audit trail proves you did everything right. Managers are never personally exposed.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <FileText className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Ready for CQC 2027</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Inspector-Ready</h3>
               <p className="text-gray-600">
-                Digital proof of staff training and equipment checks. Be prepared when inspectors ask for records.
+                CQC asks for training records? Pull up timestamped proof instantly. No scrambling, no gaps, no exposure.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <Globe className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Language Isn't a Liability</h3>
+              <p className="text-gray-600">
+                90+ languages means staff can't claim they didn't understand. Documented proof that language was never a barrier.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <Clock className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Real-Time Manager Alerts</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Covered From Day One</h3>
               <p className="text-gray-600">
-                Equipment fault reported? Manager emailed instantly. Prevent incidents before they happen.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Users className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Staff Confidence & Inclusion</h3>
-              <p className="text-gray-600">
-                Every team member understands equipment fully in their native language. Nobody left behind.
+                Fault reported? You're emailed instantly with timestamp. Nobody can say "we told you" without proof.
               </p>
             </div>
           </div>
@@ -447,10 +439,10 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Simple, Transparent Pricing
+              What Does Protection Cost?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the plan that fits your facility. All plans include 90+ languages, real-time alerts, and digital training records.
+              Less than a single equipment incident. All plans include inspector-proof records, 90+ languages, and instant manager alerts.
             </p>
           </div>
 
@@ -471,28 +463,28 @@ function App() {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">YouTube tutorials</span>
+                  <span className="text-gray-700">Timestamped training records</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">Written instructions</span>
+                  <span className="text-gray-700">90+ language chatbot</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">Training forms</span>
+                  <span className="text-gray-700">Instant fault alerts</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">Multilingual chatbot</span>
+                  <span className="text-gray-700">Inspector-ready audit trail</span>
                 </li>
               </ul>
 
               <a 
                 href="#contact" 
-                className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
                 aria-label="Get started with EquipSafety Small plan"
               >
-                Get Started
+                Get Protected
               </a>
             </div>
 
@@ -516,19 +508,19 @@ function App() {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
-                  <span>YouTube tutorials</span>
+                  <span>Timestamped training records</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
-                  <span>Written instructions</span>
+                  <span>90+ language chatbot</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
-                  <span>Training forms</span>
+                  <span>Instant fault alerts</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
-                  <span>Multilingual chatbot</span>
+                  <span>Inspector-ready audit trail</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
@@ -538,17 +530,17 @@ function App() {
 
               <a 
                 href="#contact" 
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                className="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
                 aria-label="Get started with EquipSafety Medium plan - most popular option"
               >
-                Get Started
+                Get Protected
               </a>
             </div>
 
             {/* Large Plan */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Large</h3>
-              <p className="text-gray-600 mb-6">For large chains & enterprises</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Large / Multi-Site</h3>
+              <p className="text-gray-600 mb-6">For groups & enterprises</p>
               
               <div className="mb-6">
                 <div className="text-gray-700 mb-2">Setup Fee</div>
@@ -569,17 +561,17 @@ function App() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">Custom training</span>
+                  <span className="text-gray-700">Group-wide rollout support</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">Priority support</span>
+                  <span className="text-gray-700">Multi-site dashboard</span>
                 </li>
               </ul>
 
               <a 
                 href="#contact" 
-                className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
                 aria-label="Contact sales for EquipSafety Large plan"
               >
                 Contact Sales
@@ -589,7 +581,7 @@ function App() {
 
           <div className="bg-blue-50 p-8 rounded-xl text-center">
             <p className="text-gray-700 mb-2">
-              <strong>Need custom pricing?</strong> For facilities with 100+ equipment or special requirements, we offer tailored solutions.
+              <strong>Need custom pricing?</strong> For facilities with 100+ equipment or group-wide rollouts, we offer tailored solutions.
             </p>
             <a href="#contact" className="text-blue-900 font-bold hover:underline">
               Contact our sales team →
@@ -598,22 +590,22 @@ function App() {
         </div>
       </section>
 
-      {/* Social Proof Section */}
+      {/* Social Proof Section - REFRAMED */}
       <section className="py-20 px-6 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">The EquipSafety Difference</h2>
+          <h2 className="text-4xl font-bold mb-12">The Protection You Get</h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div>
               <div className="text-5xl font-bold text-orange-500 mb-2">100%</div>
-              <p className="text-xl text-blue-200">Digital Training Records</p>
+              <p className="text-xl text-blue-200">Timestamped Training Records</p>
             </div>
             <div>
               <div className="text-5xl font-bold text-orange-500 mb-2">90+</div>
-              <p className="text-xl text-blue-200">Languages. Zero Barriers.</p>
+              <p className="text-xl text-blue-200">Languages. No Excuses.</p>
             </div>
             <div>
               <div className="text-5xl font-bold text-orange-500 mb-2">Instant</div>
-              <p className="text-xl text-blue-200">Manager Alerts. Zero Delays.</p>
+              <p className="text-xl text-blue-200">Fault Alerts. You're Covered.</p>
             </div>
           </div>
         </div>
@@ -624,10 +616,10 @@ function App() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Get Your Free Safety Audit
+              Get Your Free Liability Audit
             </h2>
             <p className="text-xl text-gray-600">
-              We'll assess your facility's equipment, identify language barriers, and provide a custom safety solution proposal at no cost.
+              We'll assess your facility's exposure: equipment without training records, language gaps, missing documentation. Then show you exactly how to close those gaps before your next inspection.
             </p>
           </div>
 
@@ -638,7 +630,7 @@ function App() {
                 <span className="font-bold text-lg text-gray-900">Limited Availability</span>
               </div>
               <p className="text-gray-700">
-                We're currently offering <strong className="text-orange-600">10 free safety audits</strong> to care facilities. 
+                We're currently offering <strong className="text-orange-600">10 free liability audits</strong> to care facilities. 
                 <strong> Only 7 spots remaining</strong> this month.
               </p>
             </div>
@@ -651,7 +643,7 @@ function App() {
               width="100%" 
               height="600px" 
               frameBorder="0"
-              title="EquipSafety Safety Audit Request Form"
+              title="EquipSafety Liability Audit Request Form"
             ></iframe>
           </div>
 
@@ -687,8 +679,8 @@ function App() {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" aria-hidden="true" />
                 <div>
-                  <p className="font-bold text-gray-900 mb-1">Custom Pricing</p>
-                  <p className="text-gray-600 text-sm">Pay only for equipment you need covered</p>
+                  <p className="font-bold text-gray-900 mb-1">Live in 7 Days</p>
+                  <p className="text-gray-600 text-sm">Get protected fast—especially before inspections</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -713,14 +705,14 @@ function App() {
                 <span className="text-2xl font-bold">EquipSafety</span>
               </div>
               <p className="text-gray-400">
-                Protecting care facility staff through multilingual equipment safety training and digital record-keeping.
+                Inspector-proof training records and audit trails for care home managers who can't afford to be exposed.
               </p>
             </div>
             <div>
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
-                <li><a href="#contact" className="hover:text-white">Get Started</a></li>
+                <li><a href="#contact" className="hover:text-white">Get Protected</a></li>
                 <li><button onClick={() => setCurrentPage('cqc')} className="hover:text-white text-left">CQC Requirements</button></li>
               </ul>
             </div>
@@ -748,7 +740,6 @@ function App() {
 }
 
 export default App
-
 
 
 
