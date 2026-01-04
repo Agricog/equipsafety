@@ -788,7 +788,7 @@ function HomePage() {
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
-                <li><a href="#demo" className="hover:text-white">See Demo</a></li>
+                <li><a href="https://app.equipsafety.co.uk/demo" className="hover:text-white">See Demo</a></li>
                 <li><a href="#contact" className="hover:text-white">Get Protected</a></li>
                 <li><Link to="/cqc-compliance" className="hover:text-white">CQC Requirements</Link></li>
               </ul>
