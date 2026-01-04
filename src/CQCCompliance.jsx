@@ -108,12 +108,13 @@ export default function CQCCompliance() {
             <span className="text-2xl font-bold">EquipSafety</span>
           </Link>
           <Link 
-            to="/" 
-            className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
-            aria-label="Return to EquipSafety homepage"
-          >
-            Back to Home
-          </Link>
+  to="/" 
+  onClick={() => window.scrollTo(0, 0)}
+  className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
+  aria-label="Return to EquipSafety homepage"
+>
+  Back to Home
+</Link>
         </div>
       </header>
 
