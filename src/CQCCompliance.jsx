@@ -659,7 +659,7 @@ export default function CQCCompliance() {
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link to="/" className="hover:text-white">Home</Link></li>
-                <li><Link to="/#demo" className="hover:text-white">See Demo</Link></li>
+                <li><a href="https://app.equipsafety.co.uk/demo" className="hover:text-white">See Demo</a></li>
                 <li><Link to="/#contact" className="hover:text-white">Get Protected</Link></li>
               </ul>
             </div>
