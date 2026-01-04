@@ -1,25 +1,11 @@
-import { useState } from 'react'
+import { Routes, Route, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText, Zap, Play, MessageSquare, ClipboardCheck, BookOpen } from 'lucide-react'
 import CQCCompliance from './CQCCompliance'
 import Privacy from './Privacy'
 import TermsOfService from './TermsOfService'
 
-function App() {
-  const [currentPage, setCurrentPage] = useState('home')
-
-  if (currentPage === 'cqc') {
-    return <CQCCompliance />
-  }
-
-  if (currentPage === 'privacy') {
-    return <Privacy />
-  }
-
-  if (currentPage === 'terms') {
-    return <TermsOfService />
-  }
-
+function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* SEO Helmet */}
@@ -144,18 +130,18 @@ function App() {
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Shield className="w-8 h-8" aria-hidden="true" />
             <span className="text-2xl font-bold">EquipSafety</span>
-          </div>
+          </Link>
           <div className="flex items-center gap-4">
-            <button
-              onClick={() => setCurrentPage('cqc')}
+            <Link
+              to="/cqc-compliance"
               className="text-white hover:text-orange-500 font-semibold transition-colors"
               aria-label="Navigate to CQC Requirements page"
             >
               CQC Requirements
-            </button>
+            </Link>
             <a 
               href="#contact" 
               className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
@@ -167,7 +153,7 @@ function App() {
         </div>
       </header>
 
-      {/* Hero Section - REFRAMED */}
+      {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -185,14 +171,12 @@ function App() {
                 <a 
                   href="#contact" 
                   className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
-                  aria-label="Get your free liability audit"
                 >
                   Get Your Free Liability Audit
                 </a>
                 <a 
                   href="#how-it-works" 
                   className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
-                  aria-label="See how protection works"
                 >
                   See How It Works
                 </a>
@@ -213,8 +197,8 @@ function App() {
         </div>
       </section>
 
-      {/* Trust Badges - REFRAMED */}
-      <section className="py-8 px-6 bg-gray-50 border-y border-gray-200" aria-label="Trust and reliability badges">
+      {/* Trust Badges */}
+      <section className="py-8 px-6 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <div className="flex items-center gap-2">
@@ -237,7 +221,7 @@ function App() {
         </div>
       </section>
 
-      {/* Problem Section - REFRAMED AROUND LIABILITY */}
+      {/* Problem Section */}
       <section className="py-20 px-6 bg-red-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -270,7 +254,7 @@ function App() {
         </div>
       </section>
 
-      {/* Solution Section - REFRAMED AS LIABILITY SHIELD */}
+      {/* Solution Section */}
       <section className="py-20 px-6 bg-white" id="how-it-works">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -288,36 +272,28 @@ function App() {
                 <QrCode className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">1. Staff Scans QR</h3>
-              <p className="text-gray-600">
-                Timestamp created. Record of who accessed training and when.
-              </p>
+              <p className="text-gray-600">Timestamp created. Record of who accessed training and when.</p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">2. Completes Training</h3>
-              <p className="text-gray-600">
-                Video + instructions + confirmation form. Proof of competency, not trust.
-              </p>
+              <p className="text-gray-600">Video + instructions + confirmation form. Proof of competency, not trust.</p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Globe className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">3. No Language Excuse</h3>
-              <p className="text-gray-600">
-                Chatbot answers questions in 90+ languages. Staff can't claim they didn't understand.
-              </p>
+              <p className="text-gray-600">Chatbot answers questions in 90+ languages. Staff can't claim they didn't understand.</p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-blue-900" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">4. You're Protected</h3>
-              <p className="text-gray-600">
-                Fault? You're emailed instantly with timestamp. Training gap? You have the records.
-              </p>
+              <p className="text-gray-600">Fault? You're emailed instantly with timestamp. Training gap? You have the records.</p>
             </div>
           </div>
 
@@ -392,9 +368,7 @@ function App() {
       <section className="py-20 px-6 bg-gray-50" id="demo">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              See It In Action
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">See It In Action</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               This is what staff see when they scan the QR code on equipment. Each element creates documented proof that protects you.
             </p>
@@ -410,7 +384,6 @@ function App() {
               </div>
               
               <div className="p-6 space-y-6">
-                {/* Video Preview */}
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-3">
                     <Play className="w-5 h-5 text-indigo-600" aria-hidden="true" />
@@ -421,7 +394,6 @@ function App() {
                   </div>
                 </div>
 
-                {/* Instructions Preview */}
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-3">
                     <BookOpen className="w-5 h-5 text-indigo-600" aria-hidden="true" />
@@ -432,7 +404,6 @@ function App() {
                   </div>
                 </div>
 
-                {/* Chatbot Preview */}
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-3">
                     <MessageSquare className="w-5 h-5 text-indigo-600" aria-hidden="true" />
@@ -443,7 +414,6 @@ function App() {
                   </div>
                 </div>
 
-                {/* Form Preview */}
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-3">
                     <ClipboardCheck className="w-5 h-5 text-indigo-600" aria-hidden="true" />
@@ -523,13 +493,11 @@ function App() {
         </div>
       </section>
 
-      {/* Benefits Section - REFRAMED */}
+      {/* Benefits Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Managers Choose EquipSafety
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Managers Choose EquipSafety</h2>
             <p className="text-xl text-gray-600">Protection from risk, blame, and regulatory exposure</p>
           </div>
 
@@ -537,33 +505,25 @@ function App() {
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <Shield className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Personal Protection</h3>
-              <p className="text-gray-600">
-                When something goes wrong, the audit trail proves you did everything right. Managers are never personally exposed.
-              </p>
+              <p className="text-gray-600">When something goes wrong, the audit trail proves you did everything right. Managers are never personally exposed.</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <FileText className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Inspector-Ready</h3>
-              <p className="text-gray-600">
-                CQC asks for training records? Pull up timestamped proof instantly. No scrambling, no gaps, no exposure.
-              </p>
+              <p className="text-gray-600">CQC asks for training records? Pull up timestamped proof instantly. No scrambling, no gaps, no exposure.</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <Globe className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Language Isn't a Liability</h3>
-              <p className="text-gray-600">
-                90+ languages means staff can't claim they didn't understand. Documented proof that language was never a barrier.
-              </p>
+              <p className="text-gray-600">90+ languages means staff can't claim they didn't understand. Documented proof that language was never a barrier.</p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <Clock className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Covered From Day One</h3>
-              <p className="text-gray-600">
-                Fault reported? You're emailed instantly with timestamp. Nobody can say "we told you" without proof.
-              </p>
+              <p className="text-gray-600">Fault reported? You're emailed instantly with timestamp. Nobody can say "we told you" without proof.</p>
             </div>
           </div>
         </div>
@@ -573,9 +533,7 @@ function App() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              What Does Protection Cost?
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Does Protection Cost?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Less than a single equipment incident. All plans include inspector-proof records, 90+ languages, and instant manager alerts.
             </p>
@@ -614,11 +572,7 @@ function App() {
                 </li>
               </ul>
 
-              <a 
-                href="#contact" 
-                className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
-                aria-label="Get started with EquipSafety Small plan"
-              >
+              <a href="#contact" className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors">
                 Get Protected
               </a>
             </div>
@@ -663,11 +617,7 @@ function App() {
                 </li>
               </ul>
 
-              <a 
-                href="#contact" 
-                className="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
-                aria-label="Get started with EquipSafety Medium plan - most popular option"
-              >
+              <a href="#contact" className="block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors">
                 Get Protected
               </a>
             </div>
@@ -704,11 +654,7 @@ function App() {
                 </li>
               </ul>
 
-              <a 
-                href="#contact" 
-                className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
-                aria-label="Contact sales for EquipSafety Large plan"
-              >
+              <a href="#contact" className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors">
                 Contact Sales
               </a>
             </div>
@@ -718,14 +664,12 @@ function App() {
             <p className="text-gray-700 mb-2">
               <strong>Need custom pricing?</strong> For facilities with 100+ equipment or group-wide rollouts, we offer tailored solutions.
             </p>
-            <a href="#contact" className="text-blue-900 font-bold hover:underline">
-              Contact our sales team →
-            </a>
+            <a href="#contact" className="text-blue-900 font-bold hover:underline">Contact our sales team →</a>
           </div>
         </div>
       </section>
 
-      {/* Social Proof Section - REFRAMED */}
+      {/* Social Proof Section */}
       <section className="py-20 px-6 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12">The Protection You Get</h2>
@@ -746,13 +690,11 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Form Section with SmartSuite Iframe */}
+      {/* Contact Form Section */}
       <section className="py-20 px-6 bg-white" id="contact">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Get Your Free Liability Audit
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Get Your Free Liability Audit</h2>
             <p className="text-xl text-gray-600">
               We'll assess your facility's exposure: equipment without training records, language gaps, missing documentation. Then show you exactly how to close those gaps before your next inspection.
             </p>
@@ -771,7 +713,6 @@ function App() {
             </div>
           </div>
 
-          {/* SmartSuite Form Iframe */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <iframe 
               src="https://app.smartsuite.com/form/sba974gi/oRiNhRxfaT?header=false" 
@@ -835,10 +776,10 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
+              <Link to="/" className="flex items-center gap-2 mb-4">
                 <Shield className="w-8 h-8" aria-hidden="true" />
                 <span className="text-2xl font-bold">EquipSafety</span>
-              </div>
+              </Link>
               <p className="text-gray-400">
                 Inspector-proof training records and audit trails for care home managers who can't afford to be exposed.
               </p>
@@ -849,7 +790,7 @@ function App() {
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
                 <li><a href="#demo" className="hover:text-white">See Demo</a></li>
                 <li><a href="#contact" className="hover:text-white">Get Protected</a></li>
-                <li><button onClick={() => setCurrentPage('cqc')} className="hover:text-white text-left">CQC Requirements</button></li>
+                <li><Link to="/cqc-compliance" className="hover:text-white">CQC Requirements</Link></li>
               </ul>
             </div>
             <div>
@@ -863,8 +804,8 @@ function App() {
           </div>
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
-              <button onClick={() => setCurrentPage('privacy')} className="text-gray-400 hover:text-white">Privacy Policy</button>
-              <button onClick={() => setCurrentPage('terms')} className="text-gray-400 hover:text-white">Terms of Service</button>
+              <Link to="/privacy" className="text-gray-400 hover:text-white">Privacy Policy</Link>
+              <Link to="/terms" className="text-gray-400 hover:text-white">Terms of Service</Link>
               <a href="/sitemap.xml" className="text-gray-400 hover:text-white">Sitemap</a>
             </div>
             <p className="text-center text-gray-400">&copy; 2025 EquipSafety. All rights reserved.</p>
@@ -872,6 +813,17 @@ function App() {
         </div>
       </footer>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/cqc-compliance" element={<CQCCompliance />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<TermsOfService />} />
+    </Routes>
   )
 }
 
