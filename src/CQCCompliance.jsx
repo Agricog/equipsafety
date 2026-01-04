@@ -103,7 +103,7 @@ export default function CQCCompliance() {
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2">
             <Shield className="w-8 h-8" aria-hidden="true" />
             <span className="text-2xl font-bold">EquipSafety</span>
           </Link>
