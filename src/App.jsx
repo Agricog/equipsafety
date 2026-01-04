@@ -511,7 +511,7 @@ function App() {
               </div>
 
               <a 
-                href="https://app.equipsafety.co.uk/demo/floorbed.html" 
+                href="https://app.equipsafety.co.uk/demo" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-xl text-center transition-colors text-lg"
