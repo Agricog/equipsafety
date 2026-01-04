@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Shield, ArrowLeft } from 'lucide-react'
 
 export default function TermsOfService() {
@@ -6,16 +7,16 @@ export default function TermsOfService() {
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center gap-4">
-          <button 
-            onClick={() => window.location.href = '/'}
+          <Link 
+            to="/"
             className="hover:text-orange-500 transition-colors"
           >
             <ArrowLeft className="w-6 h-6" />
-          </button>
-          <div className="flex items-center gap-2">
+          </Link>
+          <Link to="/" className="flex items-center gap-2">
             <Shield className="w-8 h-8" />
             <span className="text-2xl font-bold">EquipSafety</span>
-          </div>
+          </Link>
         </div>
       </header>
 
