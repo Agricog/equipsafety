@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Helmet } from 'react-helmet'
-import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText, Zap } from 'lucide-react'
+import { Shield, Globe, QrCode, CheckCircle, AlertTriangle, Clock, Users, FileText, Zap, Play, MessageSquare, ClipboardCheck, BookOpen } from 'lucide-react'
 import CQCCompliance from './CQCCompliance'
 import Privacy from './Privacy'
 import TermsOfService from './TermsOfService'
@@ -388,8 +388,143 @@ function App() {
         </div>
       </section>
 
+      {/* See It In Action Section */}
+      <section className="py-20 px-6 bg-gray-50" id="demo">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              See It In Action
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              This is what staff see when they scan the QR code on equipment. Each element creates documented proof that protects you.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Demo Preview */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 text-center">
+                <p className="text-2xl font-bold mb-1">🏥 FloorBed</p>
+                <p className="opacity-90">Demo Room</p>
+                <span className="inline-block bg-white/20 px-3 py-1 rounded-full text-xs mt-2 uppercase tracking-wide">Demo Page</span>
+              </div>
+              
+              <div className="p-6 space-y-6">
+                {/* Video Preview */}
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Play className="w-5 h-5 text-indigo-600" aria-hidden="true" />
+                    <span className="font-semibold text-gray-900">Video Tutorial</span>
+                  </div>
+                  <div className="bg-gray-900 rounded-lg aspect-video flex items-center justify-center">
+                    <Play className="w-12 h-12 text-white opacity-80" aria-hidden="true" />
+                  </div>
+                </div>
+
+                {/* Instructions Preview */}
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <BookOpen className="w-5 h-5 text-indigo-600" aria-hidden="true" />
+                    <span className="font-semibold text-gray-900">Operating Instructions</span>
+                  </div>
+                  <div className="bg-gray-100 rounded-lg h-24 flex items-center justify-center text-gray-500 text-sm">
+                    PDF Manual Embedded
+                  </div>
+                </div>
+
+                {/* Chatbot Preview */}
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MessageSquare className="w-5 h-5 text-indigo-600" aria-hidden="true" />
+                    <span className="font-semibold text-gray-900">Need Help?</span>
+                  </div>
+                  <div className="bg-blue-50 border-l-4 border-indigo-500 p-3 rounded text-sm text-gray-700">
+                    🤖 <strong>AI Assistant is active!</strong> Ask questions in any language.
+                  </div>
+                </div>
+
+                {/* Form Preview */}
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <ClipboardCheck className="w-5 h-5 text-indigo-600" aria-hidden="true" />
+                    <span className="font-semibold text-gray-900">Safety Check & Training Log</span>
+                  </div>
+                  <div className="bg-gray-100 rounded-lg h-16 flex items-center justify-center text-gray-500 text-sm">
+                    Training Confirmation Form
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Callouts */}
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-500">
+                <div className="flex items-start gap-4">
+                  <div className="bg-green-100 p-3 rounded-lg">
+                    <Play className="w-6 h-6 text-green-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Video Tutorial</h3>
+                    <p className="text-gray-600 mb-2">Staff claim: <em className="text-red-600">"I wasn't shown how to use it"</em></p>
+                    <p className="text-green-700 font-semibold">Your proof: Video demonstration was available and accessible.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <BookOpen className="w-6 h-6 text-blue-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Operating Instructions</h3>
+                    <p className="text-gray-600 mb-2">Staff claim: <em className="text-red-600">"I didn't have access to the manual"</em></p>
+                    <p className="text-blue-700 font-semibold">Your proof: PDF manual embedded directly on the page.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                <div className="flex items-start gap-4">
+                  <div className="bg-purple-100 p-3 rounded-lg">
+                    <MessageSquare className="w-6 h-6 text-purple-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Multilingual Chatbot</h3>
+                    <p className="text-gray-600 mb-2">Staff claim: <em className="text-red-600">"I didn't understand the instructions"</em></p>
+                    <p className="text-purple-700 font-semibold">Your proof: AI assistant available in 90+ languages.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-orange-500">
+                <div className="flex items-start gap-4">
+                  <div className="bg-orange-100 p-3 rounded-lg">
+                    <ClipboardCheck className="w-6 h-6 text-orange-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Training Confirmation Form</h3>
+                    <p className="text-gray-600 mb-2">Staff claim: <em className="text-red-600">"I was never trained on this"</em></p>
+                    <p className="text-orange-700 font-semibold">Your proof: Timestamped submission with their name and date.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a 
+                href="https://app.equipsafety.co.uk/demo/floorbed.html" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-xl text-center transition-colors text-lg"
+              >
+                Try the Live Demo →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section - REFRAMED */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -399,7 +534,7 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <Shield className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Personal Protection</h3>
               <p className="text-gray-600">
@@ -407,7 +542,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <FileText className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Inspector-Ready</h3>
               <p className="text-gray-600">
@@ -415,7 +550,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <Globe className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Language Isn't a Liability</h3>
               <p className="text-gray-600">
@@ -423,7 +558,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <Clock className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">Covered From Day One</h3>
               <p className="text-gray-600">
@@ -435,7 +570,7 @@ function App() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -448,7 +583,7 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Small Plan */}
-            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
+            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Small</h3>
               <p className="text-gray-600 mb-6">Perfect for smaller facilities</p>
               
@@ -538,7 +673,7 @@ function App() {
             </div>
 
             {/* Large Plan */}
-            <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
+            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 hover:border-blue-900 transition-all">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Large / Multi-Site</h3>
               <p className="text-gray-600 mb-6">For groups & enterprises</p>
               
@@ -712,6 +847,7 @@ function App() {
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#how-it-works" className="hover:text-white">How It Works</a></li>
+                <li><a href="#demo" className="hover:text-white">See Demo</a></li>
                 <li><a href="#contact" className="hover:text-white">Get Protected</a></li>
                 <li><button onClick={() => setCurrentPage('cqc')} className="hover:text-white text-left">CQC Requirements</button></li>
               </ul>
