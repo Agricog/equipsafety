@@ -131,7 +131,7 @@ function HomePage() {
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <img src="/images/logo.png" alt="EquipSafety" className="h-[74px]" />
+            <img src="/images/logo.png" alt="EquipSafety" className="h-[84px]" />
           </Link>
           <div className="flex items-center gap-4">
             <Link
