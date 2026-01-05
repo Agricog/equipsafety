@@ -202,7 +202,7 @@ function HomePage() {
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-              <span className="text-sm md:text-base font-semibold text-gray-700">Inspector-Proof Records</span>
+              <span className="text-sm md:text-base font-semibold text-gray-700">Inspection-Proof Records</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-blue-600" aria-hidden="true" />
