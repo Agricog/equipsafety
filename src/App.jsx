@@ -133,22 +133,22 @@ function HomePage() {
           <Link to="/" className="flex items-center">
             <img src="/images/logo.png" alt="EquipSafety" className="h-10 md:h-[130px]" />
           </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              to="/cqc-compliance"
-              className="text-white hover:text-orange-500 font-semibold transition-colors"
-              aria-label="Navigate to CQC Requirements page"
-            >
-              CQC Requirements
-            </Link>
-            <a 
-              href="#contact" 
-              className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors"
-              aria-label="Get started with EquipSafety - open contact form"
-            >
-              Get Protected
-            </a>
-          </div>
+          <div className="flex items-center gap-2 md:gap-4">
+  <Link
+    to="/cqc-compliance"
+    className="text-white hover:text-orange-500 text-xs md:text-base font-semibold transition-colors"
+    aria-label="Navigate to CQC Requirements page"
+  >
+    CQC Requirements
+  </Link>
+  <a 
+    href="#contact" 
+    className="bg-orange-500 hover:bg-orange-600 px-3 py-1 md:px-6 md:py-2 rounded-lg text-xs md:text-base font-semibold transition-colors"
+    aria-label="Get started with EquipSafety - open contact form"
+  >
+    Get Protected
+  </a>
+</div>
         </div>
       </header>
 
