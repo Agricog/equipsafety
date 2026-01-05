@@ -11,7 +11,7 @@ function HomePage() {
       {/* SEO Helmet */}
       <Helmet>
         <html lang="en" />
-        <title>EquipSafety - Inspector-Proof Training Records for Care Homes | Never Be Exposed Again</title>
+        <title>EquipSafety - Inspection-Proof Training Records for Care Homes | Never Be Exposed Again</title>
         <meta name="description" content="Create timestamped, inspector-proof audit trails so managers are never personally exposed when something goes wrong. Digital proof of competency in 90+ languages." />
         <meta name="keywords" content="CQC compliance records, care home audit trail, equipment training proof, inspector ready care home, manager liability protection, care home digital records" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -164,7 +164,7 @@ function HomePage() {
                 When Something Goes Wrong, You'll Have the Proof That Protects You
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Timestamped, inspector-proof audit trails. Staff can't claim they didn't understand. Faults are logged the second they're reported. You're covered.
+                Timestamped, inspection-proof audit trails. Staff can't claim they didn't understand. Faults are logged the second they're reported. You're covered.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -258,7 +258,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Your Timestamped, Inspector-Proof Audit Trail
+              Your Timestamped, Inspection-Proof Audit Trail
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Every scan creates documented proof. Every training confirmation is timestamped. Every fault report notifies you instantly with a permanent record. When inspectors ask for evidence—you have it.
@@ -327,7 +327,7 @@ function HomePage() {
                     <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
                     <div>
                       <span className="font-bold">Digital Audit Trail</span>
-                      <p className="text-blue-200 text-sm">Inspector-ready records for CQC 2027 requirements</p>
+                      <p className="text-blue-200 text-sm">Inspection-ready records for CQC 2027 requirements</p>
                     </div>
                   </div>
                 </div>
@@ -509,7 +509,7 @@ function HomePage() {
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <FileText className="w-12 h-12 text-blue-900 mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Inspector-Ready</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Inspection-Ready</h3>
               <p className="text-gray-600">CQC asks for training records? Pull up timestamped proof instantly. No scrambling, no gaps, no exposure.</p>
             </div>
 
@@ -534,7 +534,7 @@ function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What Does Protection Cost?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Less than a single equipment incident. All plans include inspector-proof records, 90+ languages, and instant manager alerts.
+              Less than a single equipment incident. All plans include inspection-proof records, 90+ languages, and instant manager alerts.
             </p>
           </div>
 
@@ -567,7 +567,7 @@ function HomePage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
-                  <span className="text-gray-700">Inspector-ready audit trail</span>
+                  <span className="text-gray-700">Inspection-ready audit trail</span>
                 </li>
               </ul>
 
@@ -608,7 +608,7 @@ function HomePage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
-                  <span>Inspector-ready audit trail</span>
+                  <span>Inspection-ready audit trail</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-orange-400" aria-hidden="true" />
@@ -779,7 +779,7 @@ function HomePage() {
                 <img src="/images/logo.png" alt="EquipSafety" className="h-10" />
               </Link>
               <p className="text-gray-400">
-                Inspector-proof training records and audit trails for care home managers who can't afford to be exposed.
+                Inspection-proof training records and audit trails for care home managers who can't afford to be exposed.
               </p>
             </div>
             <div>
