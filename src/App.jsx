@@ -130,9 +130,8 @@ function HomePage() {
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2">
-            <Shield className="w-8 h-8" aria-hidden="true" />
-            <span className="text-2xl font-bold">EquipSafety</span>
+          <Link to="/" className="flex items-center">
+            <img src="/images/logo.png" alt="EquipSafety" className="h-10" />
           </Link>
           <div className="flex items-center gap-4">
             <Link
@@ -776,9 +775,8 @@ function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <Link to="/" className="flex items-center gap-2 mb-4">
-                <Shield className="w-8 h-8" aria-hidden="true" />
-                <span className="text-2xl font-bold">EquipSafety</span>
+              <Link to="/" className="flex items-center mb-4">
+                <img src="/images/logo.png" alt="EquipSafety" className="h-10" />
               </Link>
               <p className="text-gray-400">
                 Inspector-proof training records and audit trails for care home managers who can't afford to be exposed.
