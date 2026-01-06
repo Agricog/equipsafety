@@ -776,7 +776,7 @@ function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <Link to="/" className="flex items-center mb-4">
-                <img src="/images/logo.png" alt="EquipSafety" className="h-10" />
+                <img src="/images/logo.png?v=2" alt="EquipSafety" className="h-10 md:h-[100px]" />
               </Link>
               <p className="text-gray-400">
                 Inspection-proof training records and audit trails for care home managers who can't afford to be exposed.
