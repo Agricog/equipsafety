@@ -305,7 +305,7 @@ function HomePage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" aria-hidden="true" />
                     <div>
-                      <span className="font-bold">YouTube Video Tutorials</span>
+                      <span className="font-bold">Video Tutorials</span>
                       <p className="text-blue-200 text-sm">Clear, visual demonstrations of safe equipment operation</p>
                     </div>
                   </div>
