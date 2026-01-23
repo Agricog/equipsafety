@@ -174,7 +174,7 @@ function HomePage() {
                   Book a Free Demo
                 </a>
                 <a 
-                  href="#how-it-works" 
+                  href="#demo" 
                   className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg text-center transition-colors"
                 >
                   See How It Works
@@ -779,6 +779,9 @@ function HomePage() {
               <Link to="/terms" className="text-gray-400 hover:text-white">Terms of Service</Link>
               <a href="/sitemap.xml" className="text-gray-400 hover:text-white">Sitemap</a>
             </div>
+            <p className="text-center text-gray-500 text-xs mb-4 max-w-2xl mx-auto">
+              Disclaimer: EquipSafety provides training resources and information to support safe equipment operation. We accept no responsibility for equipment malfunction, misuse, or any incidents arising from the operation of equipment. Users remain responsible for ensuring equipment is properly maintained and operated in accordance with manufacturer guidelines.
+            </p>
             <p className="text-center text-gray-400">&copy; 2025 EquipSafety. All rights reserved.</p>
           </div>
         </div>
